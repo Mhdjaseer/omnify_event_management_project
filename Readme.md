@@ -1,9 +1,25 @@
 
 # 🎉 Event Management System API
 
+> ⚙️ **Production-ready** Django REST API for event and attendee management.
+
 A simple and scalable REST API built using Django and Django REST Framework (DRF) for managing events and attendee registrations. This system supports time zone-aware event listings, attendee registration, and pagination.
 
 ---
+
+## ⚠️ Note for Production
+
+- This project is designed to be **production-level**.
+- When deploying via Docker in production, make sure to:
+  - ✅ **Uncomment** the `gunicorn` command in the `Dockerfile`:
+    ```dockerfile
+    # CMD ["gunicorn", "event_manager.wsgi:application", "--bind", "0.0.0.0:8000"]
+    ```
+  - ✅ **Uncomment** or include `gunicorn` in your `requirements.txt`:
+    ```
+    gunicorn>=21.2.0
+    ```
+"""
 
 ## 🧰 Features
 
@@ -20,7 +36,7 @@ A simple and scalable REST API built using Django and Django REST Framework (DRF
 ## 🚀 Tech Stack
 
 - **Backend**: Django, Django REST Framework
-- **Database**: PostgreSQL / SQLite
+- **Database**:SQLite
 - **Time Handling**: `pytz`, `django.utils.timezone`
 - **Testing**: Django TestCase
 - **Logging**: Python `logging` module
@@ -62,15 +78,23 @@ python manage.py runserver
 ```
 
 ---
+### 🐳 Option 2: Run with Docker
+
+#### 1. Build and Run
+
+```bash
+docker compose up --build 
+
+```
 
 ## ⚙️ Environment Variables (`.env`)
 
 Create a `.env` file for your secret settings:
 
 ```
+#No needs default value already added in setting.py 
 DEBUG=True
 SECRET_KEY=your-secret-key
-DATABASE_URL=sqlite:///db.sqlite3  # or PostgreSQL URL
 ```
 
 ---
@@ -104,6 +128,8 @@ DATABASE_URL=sqlite:///db.sqlite3  # or PostgreSQL URL
 
 ```bash
 python manage.py test
+OR 
+docker exec -it django_event_app python manage.py test_seed
 ```
 
 ---
@@ -142,7 +168,7 @@ LOGGING = {
 │   ├── views.py
 │   ├── services.py
 │   ├── tests.py
-├── event_manager/
+├── omnify_eventora/
 │   ├── settings.py
 │   ├── urls.py
 ├── manage.py
@@ -151,22 +177,29 @@ LOGGING = {
 
 ---
 
-## 📌 Future Enhancements
-
-- ✅ Email notifications for attendees
-- ✅ Event categories/tags
-- ✅ Admin dashboard (optional)
-- ✅ Rate limiting and throttling
-- ✅ Async support (with Django 4+)
-
 ---
 
-## 🧑‍💻 Author
+## 🧪 Load Demo Data
 
-Made with ❤️ by [Your Name](https://github.com/your-username)
+You can populate the database with sample events and attendees using the provided scripts.
 
----
+### 🔹 On Windows
 
-## 📄 License
+Run the `.bat` file:
 
-This project is licensed under the MIT License.
+```bash
+.\seed_demo.bat
+```
+
+### 🔹  On macOS/Linux
+
+Run the `.sh` file:
+
+```
+chmod +x seed_demo.sh
+./seed_demo.sh
+```
+### 🔹 OR
+```
+docker exec -it django_event_app python manage.py test_seed^C
+```
