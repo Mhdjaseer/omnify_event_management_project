@@ -1,0 +1,8 @@
+asgiref==3.9.1
+Django==4.2.11
+djangorestframework==3.14.0
+Faker==37.5.3
+python-dotenv==1.0.1
+pytz==2025.2
+sqlparse==0.5.3
+tzdata==2025.2

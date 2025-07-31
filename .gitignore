@@ -1,0 +1,61 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Environment
+.env
+*.env
+
+# Django specific
+db.sqlite3
+*.log
+media/
+staticfiles/
+local_settings.py
+
+# Virtualenv
+venv/
+env/
+ENV/
+.venv/
+.idea/
+.vscode/
+
+# Migrations (optional - if you recreate them often)
+# Uncomment if you regenerate migrations frequently
+# **/migrations/*.py
+# **/migrations/*.pyc
+# **/migrations/__pycache__/
+
+# Pytest
+htmlcov/
+.cache/
+.pytest_cache/
+
+# Coverage reports
+coverage.xml
+*.cover
+*.coverage
+.coverage.*
+
+# VSCode settings
+.vscode/
+
+# Docker files
+*.pid
+*.sock
+__pycache__/
+docker-compose.override.yml
+
+# MacOS and system files
+.DS_Store
+Thumbs.db
+
+# Compiled files
+*.egg-info/
+*.egg
+dist/
+build/
