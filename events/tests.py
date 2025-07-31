@@ -109,7 +109,7 @@ class EventAPITestCase(APITestCase):
         self.assertIn("Event is full", response.data['error'])
 
     def test_get_attendee_list(self):
-        Attendee.objects.all().delete()  # 🔑 clear existing data
+        Attendee.objects.all().delete()
 
         Attendee.objects.create(event=self.event, name="John", email="john@example.com")
         Attendee.objects.create(event=self.event, name="Jane", email="jane@example.com")

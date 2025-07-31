@@ -1,8 +1,7 @@
-# project/urls.py
 from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('events.urls')),  # This includes all events URLs
+    path('', include('events.urls')),
 ]
