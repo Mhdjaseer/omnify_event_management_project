@@ -6,6 +6,10 @@
 A simple and scalable REST API built using Django and Django REST Framework (DRF) for managing events and attendee registrations. This system supports time zone-aware event listings, attendee registration, and pagination.
 
 ---
+### API Documentation
+```
+https://documenter.getpostman.com/view/28221885/2sB3BAKX4k
+```
 
 ## ⚠️ Note for Production
 
@@ -201,5 +205,6 @@ chmod +x seed_demo.sh
 ```
 ### 🔹 OR
 ```
-docker exec -it django_event_app python manage.py test_seed^C
+docker exec -it django_event_app python manage.py test_seed
 ```
+

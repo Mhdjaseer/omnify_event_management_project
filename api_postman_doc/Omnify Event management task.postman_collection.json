@@ -1,0 +1,1576 @@
+{
+	"info": {
+		"_postman_id": "3857f853-d9ac-4524-9607-d80d4d3bb49e",
+		"name": "Omnify Event management task",
+		"description": "**Base URL**\n\n`http://localhost:8000/api/`",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28221885"
+	},
+	"item": [
+		{
+			"name": "Event Endpoints",
+			"item": [
+				{
+					"name": "List Events",
+					"item": [
+						{
+							"name": "List Events",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/events/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"events",
+										""
+									]
+								},
+								"description": "Generated from cURL:  \ncurl \"[http://localhost:8000/api/events/\"](http://localhost:8000/api/events/\")"
+							},
+							"response": [
+								{
+									"name": "List Events",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8000/api/events/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"events",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 31 Jul 2025 15:00:35 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.13"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, Cookie"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, POST, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1718"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"count\": 9,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": {\n        \"current_time\": \"2025-07-31T20:30:35.006618+05:30\",\n        \"timezone\": \"Asia/Kolkata\",\n        \"events\": [\n            {\n                \"id\": 6,\n                \"name\": \"Implemented modular projection 5416\",\n                \"location\": \"Mejiamouth\",\n                \"start_time\": \"2025-08-03T15:47:42.472518+05:30\",\n                \"end_time\": \"2025-08-03T17:47:42.472518+05:30\",\n                \"max_capacity\": 48\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Function-based disintermediate product 1321\",\n                \"location\": \"Cooperside\",\n                \"start_time\": \"2025-08-03T15:47:42.758901+05:30\",\n                \"end_time\": \"2025-08-03T18:47:42.758901+05:30\",\n                \"max_capacity\": 36\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Monitored 3rdgeneration secured line 3538\",\n                \"location\": \"Port Laurenborough\",\n                \"start_time\": \"2025-08-05T15:47:42.959608+05:30\",\n                \"end_time\": \"2025-08-05T16:47:42.959608+05:30\",\n                \"max_capacity\": 33\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Progressive tertiary workforce 5542\",\n                \"location\": \"Johnfort\",\n                \"start_time\": \"2025-08-05T15:47:43.168060+05:30\",\n                \"end_time\": \"2025-08-05T16:47:43.168060+05:30\",\n                \"max_capacity\": 13\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Operative national infrastructure 1895\",\n                \"location\": \"Millerbury\",\n                \"start_time\": \"2025-08-05T15:47:43.504784+05:30\",\n                \"end_time\": \"2025-08-05T16:47:43.504784+05:30\",\n                \"max_capacity\": 34\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Tech Conference\",\n                \"location\": \"Online\",\n                \"start_time\": \"2025-08-20T14:30:00+05:30\",\n                \"end_time\": \"2025-08-20T22:30:00+05:30\",\n                \"max_capacity\": 100\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Tech Conference\",\n                \"location\": \"Online\",\n                \"start_time\": \"2025-08-20T14:30:00+05:30\",\n                \"end_time\": \"2025-08-20T22:30:00+05:30\",\n                \"max_capacity\": 100\n            },\n            {\n                \"id\": 11,\n                \"name\": \"Tech meetup\",\n                \"location\": \"Online\",\n                \"start_time\": \"2025-08-20T14:30:00+05:30\",\n                \"end_time\": \"2025-08-20T22:30:00+05:30\",\n                \"max_capacity\": 100\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Past Event\",\n                \"location\": \"Somewhere\",\n                \"start_time\": \"2026-01-01T14:30:00+05:30\",\n                \"end_time\": \"2027-01-01T22:30:00+05:30\",\n                \"max_capacity\": 50\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "With timezone conversion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/events/?timezone=America/New_York",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"events",
+										""
+									],
+									"query": [
+										{
+											"key": "timezone",
+											"value": "America/New_York"
+										}
+									]
+								},
+								"description": "Generated from cURL: curl \"http://localhost:8000/api/events/?timezone=America/New_York\""
+							},
+							"response": [
+								{
+									"name": "With timezone conversion",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8000/api/events/?timezone=America/New_York",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"events",
+												""
+											],
+											"query": [
+												{
+													"key": "timezone",
+													"value": "America/New_York"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 31 Jul 2025 15:05:20 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.13"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, Cookie"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, POST, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1722"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"count\": 9,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": {\n        \"current_time\": \"2025-07-31T11:05:19.973790-04:00\",\n        \"timezone\": \"America/New_York\",\n        \"events\": [\n            {\n                \"id\": 6,\n                \"name\": \"Implemented modular projection 5416\",\n                \"location\": \"Mejiamouth\",\n                \"start_time\": \"2025-08-03T15:47:42.472518+05:30\",\n                \"end_time\": \"2025-08-03T17:47:42.472518+05:30\",\n                \"max_capacity\": 48\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Function-based disintermediate product 1321\",\n                \"location\": \"Cooperside\",\n                \"start_time\": \"2025-08-03T15:47:42.758901+05:30\",\n                \"end_time\": \"2025-08-03T18:47:42.758901+05:30\",\n                \"max_capacity\": 36\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Monitored 3rdgeneration secured line 3538\",\n                \"location\": \"Port Laurenborough\",\n                \"start_time\": \"2025-08-05T15:47:42.959608+05:30\",\n                \"end_time\": \"2025-08-05T16:47:42.959608+05:30\",\n                \"max_capacity\": 33\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Progressive tertiary workforce 5542\",\n                \"location\": \"Johnfort\",\n                \"start_time\": \"2025-08-05T15:47:43.168060+05:30\",\n                \"end_time\": \"2025-08-05T16:47:43.168060+05:30\",\n                \"max_capacity\": 13\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Operative national infrastructure 1895\",\n                \"location\": \"Millerbury\",\n                \"start_time\": \"2025-08-05T15:47:43.504784+05:30\",\n                \"end_time\": \"2025-08-05T16:47:43.504784+05:30\",\n                \"max_capacity\": 34\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Tech Conference\",\n                \"location\": \"Online\",\n                \"start_time\": \"2025-08-20T14:30:00+05:30\",\n                \"end_time\": \"2025-08-20T22:30:00+05:30\",\n                \"max_capacity\": 100\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Tech Conference\",\n                \"location\": \"Online\",\n                \"start_time\": \"2025-08-20T14:30:00+05:30\",\n                \"end_time\": \"2025-08-20T22:30:00+05:30\",\n                \"max_capacity\": 100\n            },\n            {\n                \"id\": 11,\n                \"name\": \"Tech meetup\",\n                \"location\": \"Online\",\n                \"start_time\": \"2025-08-20T14:30:00+05:30\",\n                \"end_time\": \"2025-08-20T22:30:00+05:30\",\n                \"max_capacity\": 100\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Past Event\",\n                \"location\": \"Somewhere\",\n                \"start_time\": \"2026-01-01T14:30:00+05:30\",\n                \"end_time\": \"2027-01-01T22:30:00+05:30\",\n                \"max_capacity\": 50\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "With pagination",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/events/?page=1&page_size=5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"events",
+										""
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "page_size",
+											"value": "5"
+										}
+									]
+								},
+								"description": "Generated from cURL: curl \"[http://localhost:8000/api/events/?page=1&amp;page_size=5\"](http://localhost:8000/api/events/?page=1&page_size=5\")"
+							},
+							"response": [
+								{
+									"name": "With pagination",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8000/api/events/?page=1&page_size=5",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"events",
+												""
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "page_size",
+													"value": "5"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 31 Jul 2025 15:05:30 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.13"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, Cookie"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, POST, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1162"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"count\": 9,\n    \"next\": \"http://localhost:8000/api/events/?page=2&page_size=5\",\n    \"previous\": null,\n    \"results\": {\n        \"current_time\": \"2025-07-31T20:35:30.097156+05:30\",\n        \"timezone\": \"Asia/Kolkata\",\n        \"events\": [\n            {\n                \"id\": 6,\n                \"name\": \"Implemented modular projection 5416\",\n                \"location\": \"Mejiamouth\",\n                \"start_time\": \"2025-08-03T15:47:42.472518+05:30\",\n                \"end_time\": \"2025-08-03T17:47:42.472518+05:30\",\n                \"max_capacity\": 48\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Function-based disintermediate product 1321\",\n                \"location\": \"Cooperside\",\n                \"start_time\": \"2025-08-03T15:47:42.758901+05:30\",\n                \"end_time\": \"2025-08-03T18:47:42.758901+05:30\",\n                \"max_capacity\": 36\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Monitored 3rdgeneration secured line 3538\",\n                \"location\": \"Port Laurenborough\",\n                \"start_time\": \"2025-08-05T15:47:42.959608+05:30\",\n                \"end_time\": \"2025-08-05T16:47:42.959608+05:30\",\n                \"max_capacity\": 33\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Progressive tertiary workforce 5542\",\n                \"location\": \"Johnfort\",\n                \"start_time\": \"2025-08-05T15:47:43.168060+05:30\",\n                \"end_time\": \"2025-08-05T16:47:43.168060+05:30\",\n                \"max_capacity\": 13\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Operative national infrastructure 1895\",\n                \"location\": \"Millerbury\",\n                \"start_time\": \"2025-08-05T15:47:43.504784+05:30\",\n                \"end_time\": \"2025-08-05T16:47:43.504784+05:30\",\n                \"max_capacity\": 34\n            }\n        ]\n    }\n}"
+								}
+							]
+						}
+					],
+					"description": "GET: `/events/`"
+				},
+				{
+					"name": "Create Event",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Tech meetup\",\r\n    \"location\": \"Online\",\r\n    \"start_time\": \"2025-08-20T09:00:00Z\",\r\n    \"end_time\": \"2025-08-20T17:00:00Z\",\r\n    \"max_capacity\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/events/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"events",
+								""
+							]
+						},
+						"description": "Generated from cURL: curl -X POST \"http://localhost:8000/api/events/\" \\\r\n-H \"Content-Type: application/json\" \\\r\n-d '{\r\n    \"name\": \"Tech Conference\",\r\n    \"location\": \"Online\",\r\n    \"start_time\": \"2025-08-20T09:00:00Z\",\r\n    \"end_time\": \"2025-08-20T17:00:00Z\",\r\n    \"max_capacity\": 100\r\n}'"
+					},
+					"response": [
+						{
+							"name": "http://localhost:8000/api/events/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Tech meetup\",\r\n    \"location\": \"Online\",\r\n    \"start_time\": \"2025-08-20T09:00:00Z\",\r\n    \"end_time\": \"2025-08-20T17:00:00Z\",\r\n    \"max_capacity\": 100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/events/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"events",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 31 Jul 2025 14:56:41 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.13"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "141"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Tech meetup\",\n    \"location\": \"Online\",\n    \"start_time\": \"2025-08-20T14:30:00+05:30\",\n    \"end_time\": \"2025-08-20T22:30:00+05:30\",\n    \"max_capacity\": 100\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Event Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/events/6/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"events",
+								"6",
+								""
+							]
+						},
+						"description": "Generated from cURL: curl \"http://localhost:8000/api/events/1/\""
+					},
+					"response": [
+						{
+							"name": "Get Event Details",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/events/6/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"events",
+										"6",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 31 Jul 2025 15:07:30 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.13"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "189"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 6,\n    \"name\": \"Implemented modular projection 5416\",\n    \"location\": \"Mejiamouth\",\n    \"start_time\": \"2025-08-03T15:47:42.472518+05:30\",\n    \"end_time\": \"2025-08-03T17:47:42.472518+05:30\",\n    \"max_capacity\": 48\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Event",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Conference\",\r\n  \"location\": \"Bangalore\",\r\n  \"start_time\": \"2025-08-01T10:00:00+05:30\",\r\n  \"end_time\": \"2025-08-01T12:00:00+05:30\",\r\n  \"max_capacity\": 150\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/events/6/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"events",
+								"6",
+								""
+							]
+						},
+						"description": "Generated from cURL: curl -X PUT http://localhost:8000/api/events/1/ \\\r\n-H \"Content-Type: application/json\" \\\r\n-d '{\r\n  \"name\": \"Conference\",\r\n  \"location\": \"Bangalore\",\r\n  \"start_time\": \"2025-08-01T10:00:00+05:30\",\r\n  \"end_time\": \"2025-08-01T12:00:00+05:30\",\r\n  \"max_capacity\": 150\r\n}'\r\n"
+					},
+					"response": [
+						{
+							"name": "Update Event",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Conference\",\r\n  \"location\": \"Bangalore\",\r\n  \"start_time\": \"2025-08-01T10:00:00+05:30\",\r\n  \"end_time\": \"2025-08-01T12:00:00+05:30\",\r\n  \"max_capacity\": 150\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/events/6/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"events",
+										"6",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 31 Jul 2025 15:14:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.13"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 6,\n    \"name\": \"Conference\",\n    \"location\": \"Bangalore\",\n    \"start_time\": \"2025-08-01T10:00:00+05:30\",\n    \"end_time\": \"2025-08-01T12:00:00+05:30\",\n    \"max_capacity\": 150\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Event",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/events/6/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"events",
+								"6",
+								""
+							]
+						},
+						"description": "Generated from cURL: curl -X DELETE \"http://localhost:8000/api/events/1/\""
+					},
+					"response": [
+						{
+							"name": "Delete Event",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/events/6/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"events",
+										"6",
+										""
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 31 Jul 2025 15:15:53 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.13"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Registration Endpoints",
+			"item": [
+				{
+					"name": "Register Attendee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"email\": \"john@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/events/5/register/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"events",
+								"5",
+								"register",
+								""
+							]
+						},
+						"description": "Generated from cURL: curl -X POST \"http://localhost:8000/api/events/1/register/\" \\\r\n-H \"Content-Type: application/json\" \\\r\n-d '{\r\n    \"name\": \"John Doe\",\r\n    \"email\": \"john@example.com\"\r\n}'"
+					},
+					"response": [
+						{
+							"name": "http://localhost:8000/api/events/1/register/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"email\": \"john@example.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/events/5/register/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"events",
+										"5",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 31 Jul 2025 15:18:50 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.13"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "105"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 37,\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"registered_at\": \"2025-07-31T20:48:49.998661+05:30\"\n}"
+						}
+					]
+				},
+				{
+					"name": "List Attendees -Basic listing",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/events/5/attendees/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"events",
+								"5",
+								"attendees",
+								""
+							]
+						},
+						"description": "Generated from cURL: curl \"http://localhost:8000/api/events/1/attendees/\""
+					},
+					"response": [
+						{
+							"name": "List Attendees -Basic listing",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/events/5/attendees/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"events",
+										"5",
+										"attendees",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 31 Jul 2025 15:36:28 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.13"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "157"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 37,\n            \"name\": \"John Doe\",\n            \"email\": \"john@example.com\",\n            \"registered_at\": \"2025-07-31T20:48:49.998661+05:30\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "List Attendees-With pagination",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/events/5/attendees/?page=1&page_size=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"events",
+								"5",
+								"attendees",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "page_size",
+									"value": "5"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl \"http://localhost:8000/api/events/1/attendees/?page=1&page_size=5\""
+					},
+					"response": [
+						{
+							"name": "List Attendees-With pagination",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/events/5/attendees/?page=1&page_size=5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"events",
+										"5",
+										"attendees",
+										""
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "page_size",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 31 Jul 2025 15:36:50 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.13"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "157"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 37,\n            \"name\": \"John Doe\",\n            \"email\": \"john@example.com\",\n            \"registered_at\": \"2025-07-31T20:48:49.998661+05:30\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			],
+			"description": "### **Register Attendee**"
+		},
+		{
+			"name": "Error Responses",
+			"item": [
+				{
+					"name": "Past Event Creation (400)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Past Event\",\r\n     \"location\": \"bangalore\",\r\n    \"start_time\": \"2020-01-01T09:00:00Z\",\r\n    \"end_time\": \"2020-01-01T17:00:00Z\",\r\n    \"max_capacity\": 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/events/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"events",
+								""
+							]
+						},
+						"description": "Generated from cURL: curl -X POST \"http://localhost:8000/api/events/\" \\\r\n-H \"Content-Type: application/json\" \\\r\n-d '{\r\n    \"name\": \"Past Event\",\r\n    \"start_time\": \"2020-01-01T09:00:00Z\",\r\n    \"end_time\": \"2020-01-01T17:00:00Z\",\r\n    \"max_capacity\": 50\r\n}'"
+					},
+					"response": [
+						{
+							"name": "Past Event Creation (400)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Past Event\",\r\n     \"location\": \"bangalore\",\r\n    \"start_time\": \"2020-01-01T09:00:00Z\",\r\n    \"end_time\": \"2020-01-01T17:00:00Z\",\r\n    \"max_capacity\": 50\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/events/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"events",
+										""
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 31 Jul 2025 15:41:53 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.13"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"non_field_errors\": [\n        \"Start time must be in the future\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Duplicate Registration (400)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"John Doe\", \"email\": \"john@example.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/events/5/register/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"events",
+								"5",
+								"register",
+								""
+							]
+						},
+						"description": "Generated from cURL: curl -X POST \"http://localhost:8000/api/events/1/register/\" \\\r\n-H \"Content-Type: application/json\" \\\r\n-d '{\"name\": \"John Doe\", \"email\": \"john@example.com\"}'"
+					},
+					"response": [
+						{
+							"name": "Duplicate Registration (400)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\": \"John Doe\", \"email\": \"john@example.com\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/events/5/register/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"events",
+										"5",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 31 Jul 2025 15:39:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.13"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "62"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"['This email is already registered for the event']\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Event at Capacity (400)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"Extra\", \"email\": \"extra@example.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/events/5/register/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"events",
+								"5",
+								"register",
+								""
+							]
+						},
+						"description": "Generated from cURL: curl -X POST \"http://localhost:8000/api/events/2/register/\" \\\r\n-H \"Content-Type: application/json\" \\\r\n-d '{\"name\": \"Extra\", \"email\": \"extra@example.com\"}'"
+					},
+					"response": [
+						{
+							"name": "Event at Capacity (400)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\": \"Extra\", \"email\": \"extra@example.com\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/events/5/register/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"events",
+										"5",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 31 Jul 2025 15:39:16 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.13"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "62"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"['This email is already registered for the event']\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Invalid Timezone (400)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/events/?timezone=Invalid/Timezone",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"events",
+								""
+							],
+							"query": [
+								{
+									"key": "timezone",
+									"value": "Invalid/Timezone"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl \"http://localhost:8000/api/events/?timezone=Invalid/Timezone\""
+					},
+					"response": [
+						{
+							"name": "Invalid Timezone (400)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/events/?timezone=Invalid/Timezone",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"events",
+										""
+									],
+									"query": [
+										{
+											"key": "timezone",
+											"value": "Invalid/Timezone"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 31 Jul 2025 15:50:04 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.13"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid timezone provided\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "{{http://localhost:8000/api/}}",
+			"type": "string"
+		}
+	]
+}
