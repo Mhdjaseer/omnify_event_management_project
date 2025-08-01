@@ -52,7 +52,7 @@ https://documenter.getpostman.com/view/28221885/2sB3BAKX4k
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/event-management-api.git
+git clone https://github.com/Mhdjaseer/omnify_event_management_project.git
 cd event-management-api
 ```
 
